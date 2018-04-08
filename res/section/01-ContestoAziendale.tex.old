@@ -1,0 +1,171 @@
+%% INIZIO CONTENUTO TESI
+\mainmatter
+
+\chapter{Contesto Aziendale}
+
+\section{L'azienda}
+%\textcolor{OliveGreen}{\textbf{Descrivo come è strutturata, mission ed obiettivi, breve storia dell'evoluzione e crescita aziendale. Descrivo gli ambiti applicativi dei prodotti aziendali, le tipologie di clienti.}}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.8]{logoPF.png}
+  \caption{Logo dell'azienda Pietro Fiorentini}
+\end{figure}
+Pietro Fiorentini è un'azienda leader nella realizzazione di prodotti e servizi tecnologicamente avanzati per la distribuzione e l'utilizzo del gas naturale. 
+
+Fondata nel 1940, l'azienda inizialmente si occupava della produzione di regolatori e compressori per il pompaggio del gas naturale. In quegli anni il gas veniva via via utilizzato come fonte di energia per i motori d'auto, le abitazioni, e l'industria.
+A termine della Seconda Guerra Mondiale, a seguito della scoperta di un vasto giacimento di gas nella pianura padana, lo sviluppo dell'azienda si innesta con la fase dello sviluppo energetico italiano, passando dalla produzione di piccole apparecchiature per il consumo domestico alla realizzazione di sistemi di distribuzione ed importanti impianti per le maggiori industrie del nord Italia. Nel corso degli anni, Pietro Fiorentini ha aumentato il proprio mercato, passando alla produzione di valvole a farfalla, filtri, valvole a sfera e altri dispositivi.
+
+Dopo l'esperienza accumulata nel settore gas, a partire dagli anni '80, l'azienda si è estesa anche al settore del petrolio realizzando sistemi avanzati detti \textit{MPFM} (\textit{"MultiPhase Flow Meter"}), per misurare con un solo strumento, e in tempo reale, la qualità del petrolio estratto. La richiesta di questi sistemi, da parte dell'industria petrolifera, è data dal fatto che il fluido estratto si presenta come una miscela multifasica composta principalmente da petrolio, acqua e gas, e la separazione fisica delle diverse componenti risulterebbe fisicamente ingombrante e troppo dispendiosa in termini di tempo e manutenzione. Questi metodi non intrusivi di monitoraggio offrono una misurazione ininterrotta e possono essere installati in ogni posizione lungo condotta del pozzo di estrazione, anche in ambienti ostici come le profondità oceaniche, nel caso dei sistemi \textit{Subsea MPFM}, divisione nata nel 2009, all'interno della quale si colloca lo stage qui descritto.
+
+Attualmente, l'azienda ha attivi 12 stabilimenti, che si occupano della progettazione, realizzazione e installazione di componenti e servizi per il mercato del gas naturale e petrolio, in tutti e cinque i continenti con più di 1300 dipendenti. La \textit{vision} aziendale è la realizzazione di prodotti e servizi tecnologicamente avanzati, tramite soluzioni di sviluppo sostenibile e azioni di miglioramento continuo, per soddisfare le aspettative e le esigenze di tutti i propri clienti.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.8]{meter.jpg}
+ 
+  \caption{Misuratore di flusso multifasico}
+\end{figure}
+
+
+\section{Organizzazione interna}
+La struttura organizzativa aziendale si suddivide, per ogni tipologia di prodotto, in diverse linee di produzione denominate Divisioni e raggruppate a loro volta in \textit{Value Stream}. Ogni \textit{Value Stream} è completamente indipendente dalle altre, in modo da rendere i processi di produzione e progettazione più snelli e il più indipendenti possibili.
+Vi sono dei processi primari condivisi tra le divisioni tra cui l'\textbf{Ufficio Commerciale} che si occupa della definizione delle politiche di vendita, analizzando il mercato in modo da individuare le richieste di nuovi prodotti ed effettuare previsioni commerciali di medio e breve termine.
+
+Altri processi primari, invece, sono interni alle divisioni, e indipendenti dagli altri, tra cui:
+\begin{itemize}
+\item \textbf{Project Management}: Prevede le attività di pianificazione, coordinamento e controllo delle attività di commessa.
+\item \textbf{Ricerca e Sviluppo}: Prevede attività di proposta di nuove soluzioni da lanciare sul mercato in merito a prodotti consolidati oppure la predisposizione di programmi di sviluppo di nuovi prodotti. Lo stage è stato inserito all'interno di questo processo.
+\item \textbf{Qualità}: Si occupa di sorvegliare le attività di collaudo e di emettere le certificazioni dei prodotti realizzati. Si occupa inoltre di verificare che la documentazione sia corretta e conforme agli standard aziendali.
+\end{itemize}
+
+Parallelamente, appartenente ad un'altra \textit{Value Stream}, vi è anche il reparto \textbf{Sistemi informativi}, che ha responsabilità dei \textit{Server} e dell'infrastruttura di rete dell'intera azienda, comprese le sedi estere.
+
+
+
+\subsection{Gestione della qualità}
+%\textcolor{OliveGreen}{\textbf{Gestione kaizen per un miglioramento continuo e graduale.}}
+La gestione della qualità nella realtà industriale, caratterizzata da un costante aumento della concorrenza estera, risulta ormai essere un prerequisito fondamentale per creare dei prodotti di buona qualità che soddisfino pienamente le richieste del cliente. 
+Molte aziende attuano modelli e metodi per la gestione della qualità basati solamente sull'esperienza o perchè obbligati da fattori esterni, ottenendo quindi risultati incerti e provocando una conseguente sfiducia verso queste metodologie di controllo. Una conseguenza di questa sfiducia, porta le aziende ad organizzarsi in modi errati con conseguenti costi eccessivi, o rilasciando prodotti non conformi alle aspettative. 
+
+Negli ultimi anni, però, le realtà industriali si stanno approcciando sempre più ad un modo di pensare radicalmente diverso, ovvero il \textit{Lean Thinking}. Si tratta di una strategia operativa che racchiude insieme le teorie organizzative con l'approccio pratico. Tutta l'azienda viene coinvolta in una visione di insieme: dai processi primari di progettazione fino alla distribuzione e consegna del prodotto finito al cliente. Il controllo di qualità risulta essere parte integrante di tutta la strategia operativa, alcuni dei 6 principi fondamentali del \textit{Toyota Production System}, segnano le giusta direzione da seguire per ottenere un prodotto di qualità. Il principio che più di tutti si occupa di garantire la qualità è il quinto, che si occupa di \textit{"Ricercare la Perfezione"} che va interpretato nel senso di miglioramento continuo \textit{KAIZEN}. Se vengono applicati correttamente tutti i principi si creano delle sinergie che mettono in moto un processo continuo di riduzione dei tempi, degli spazi e dei costi. L'applicazione di questi principi deve essere sistematica e continua per giungere a continui miglioramenti. Una volta finito un ciclo, si deve ricominciare per fare emergere nuovi sprechi ed eliminarli. 
+
+Questo stage, è stato inserito in questa visione di miglioramento della qualità per poter consegnare al cliente un prodotto affidabile, riducendo i costi e gli sprechi.
+
+Questa linea di pensiero, però, non può da sola garantire che l'intero processo sia di qualità, per questo \textit{Pietro Fiorentini} segue gli obiettivi degli standard di qualità, nel caso della qualità dei processi è certificata ISO 9001.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=150px]{pdca.png}
+  \caption{Rappresentazione grafica PDCA}
+\end{figure}
+
+Il pensiero \textit{Lean} e lo standard ISO 9001 danno una spiegazione molto simile del concetto di miglioramento continuo. L'applicazione sistematica e continua può essere dunque suddivisa un quattro attività:
+\begin{itemize}
+\item \textbf{Plan: } si occupa di individuare e pianificare i processi, individuando anche gli indicatori di prestazione dei processi;
+\item \textbf{Do: } si occupa di agire secondo quando pianificato;
+\item \textbf{Check: } si occupa di controllare i risultati ottenuti rispetto a quelli attesi;
+\item \textbf{Act: } si occupa di applicare i cambiamenti e le azioni dovute.
+\end{itemize}
+
+Il miglioramento continuo per garantire un'elevata qualità dei prodotti è un ideale condiviso dall'intera azienda, e viene applicato in ogni progetto intrapreso, sia piccolo che grande; anche questo stage è stato realizzato in un ottica di miglioramento continuo.
+
+\subsection{Metodologie di Sviluppo}
+%\textcolor{OliveGreen}{\textbf{Descrivo il ciclo di vita dei processi che vengono realizzati.}} 
+Lo sviluppo del \textit{software}, all'interno della divisione \textit{MPFM} è stato assegnato a dei programmatori con esperienza nel campo del petrolio con residenza all'estero. Non avendo, dunque, sempre la possibilità di poter comunicare personalmente, principalmente per problemi di fuso orario, è nata la necessita di utilizzare degli strumenti per la collaborazione e il tracciamento dei compiti e delle funzioni da svolgere. 
+
+Il modello di ciclo di vita del \textit{software} adottato segue il modello incrementale, utile in quanto, prevedendo rilasci multipli e incrementando di volta in volta nuove funzionalità, permette al reparto di ricerca e sviluppo di testare subito il \textit{software} sui misuratori di flusso prodotti. Un altro punto a favore riguarda il fatto di mantiene uno schema abbastanza rigido per permettere di tracciare quanto è stato fatto e cosa manca. Questo permette agli sviluppatori di non essere sempre presenti nella sede dell'azienda ma di lavorare da remoto.
+
+Periodicamente sono stati pianificati degli incontri in azienda tra sviluppatori e il reparto di ricerca e sviluppo per fare il punto sulla situazione, verificare le funzionalità ed effettuare le calibrazioni hardware e software che sarebbero difficilmente attuabili da remoto.
+ 
+ 
+\section{Tecnologie Utilizzate}
+%\textcolor{OliveGreen}{\textbf{Definisco i metodi di comunicazione, struttura server, sistemi operativi, editor di testo.}}
+In questa sezione vengono elencati i principali strumenti utilizzati nella mia esperienza di stage.
+\begin{itemize}
+\item[•] Sistemi operativi locali e virtuali
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=50px]{windows.png}
+  \includegraphics[width=50px]{ubuntu.jpg}
+  \includegraphics[width=50px]{virtualBox.png}
+  \includegraphics[height=50px]{winServer.jpg}
+  \caption{Loghi sistemi operativi}
+\end{figure}
+	\begin{itemize}
+	\item \textbf{Windows 8}: Sistema operativo Microsoft presente nel terminale fornito da parte dell'azienda, utilizzato principalmente per l'utilizzo di programmi per la stesura di documenti.
+	\item \textbf{Ubuntu 17.10}: Sistema operativo \glossaryItem{open source}, installato su una macchina virtuale, utilizzato come ambiente di sviluppo per la progettazione e scrittura del software.
+	\item \textbf{Virtual Box}: \textit{Software \glossaryItem{open source}} per l'esecuzione di macchine virtuali
+	\item \textbf{Ubuntu Server 16.04}: \textit{Server} su distribuzione \textit{Linux}, creato ad-hoc per il reparto di Ricerca e sviluppo della divisione \textit{MPFM}, per l'esecuzione degli strumenti di integrazione continua.
+	\item \textbf{Windows Server 2008}: \textit{Server} che ospita gli strumenti di compilazione del \textit{software} scritto degli sviluppatori aziendali. Contiene la licenza del compilatore IAR e tutti i tools necessari per consentire la corretta esecuzione del \textit{software} nelle schede \textit{embedded} inserite nei misuratori multifasici. 
+	\end{itemize}	
+	
+\item[•] Strumenti di coordinamento
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=50px]{outlookpng.png}
+  \includegraphics[width=50px]{office.jpg}
+  \caption{Loghi strumenti di coordinamento}
+\end{figure}
+	\begin{itemize}
+	\item \textbf{Outlook}: \textit{Client} di posta elettronica aziendale, che permette la comunicazione tra i vari dipendenti, la gestione di un calendario aziendale globale consultabile da tutti i dipendenti, e la pianificazione di riunioni o corsi.
+	\item \textbf{Office 365}:  \textit{Suite} Microsoft per la produttività. Utilizzabile da applicazioni \textit{desktop} e \textit{mobile}, permette la creazione, la modifica e la condivisione di documenti.
+	\end{itemize}
+	
+\item[•] IDE ed editor di testo
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=50px]{iar.jpg}
+  \includegraphics[width=60px]{sublime.png}
+  \includegraphics[width=50px]{Notepad.png}
+ 
+  \caption{Loghi editor di testo}
+\end{figure}
+	\begin{itemize}
+	\item \textbf{IAR System}: IDE per lo sviluppo di \textit{software} per \glossaryItem{sistemi \textit{embedded}}. Fornisce strumenti per effettuare il \textit{debug} del codice e compilatori in C e C++ per lo sviluppo di \glossaryItem{firmware} per processori a 8-, 16-, 32-bit che sono installati nei misuratori di flusso.
+	\item \textbf{Sublime}: editor di testo \glossaryItem{open source} multipiattaforma, che integra strumenti di autocompletamento del codice, personalizzazione del \textit{layout} di visualizzazione e consente l'espansione con altri \textit{plug-in} aggiuntivi forniti dalla \textit{comunity}.
+	\item \textbf{Notepad++}: unico editor di testo disponibile su ambiente \textit{Windows Server}
+	\end{itemize}
+
+
+\item[•] Versionamento, collaborazione e integrazione continua
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=50px]{svn.png}
+  \includegraphics[width=50px]{redmine.png}
+  \includegraphics[width=50px]{jenkins.png}
+ 
+  \caption{Loghi strumenti di versionamento, collaborazione e integrazione continua}
+\end{figure}
+	\begin{itemize}
+	\item \textbf{Subversion}: Sistema di controllo di versione per \textit{software}, utilizzato per raccogliere tutto il codice derivante dalle varie aree di sviluppo. É stato preferito questo sistema di sviluppo in quanto permette la gestione delle autorizzazioni d'accesso basate sulle singole cartelle del progetto, e per avere una migliore gestione delle versioni dei file binari generati durante la compilazione, da caricare sui misuratori di flusso.
+	
+	\item \textbf{Redmine}: strumento che permette la collaborazione di diversi gruppi di persone. L'utilizzo di un sistema di collaborazione, risulta necessario quando le dimensioni del progetto diventano impegnative e gli attori in gioco sono vari. Redmine si occupa tenere in comunicazione e di coordinare tutte le componenti del \textit{team} di lavoro (gli sviluppatori lavorano da diversi paesi), attraverso la definizione di tracciatori e l'implementazione di un sistema di ticketing.
+	
+	\item \textbf{Jenkins}: strumento per l'integrazione continua e l'automatizzazione dei processi. Si occupa di verificare se il codice modificato o aggiunto dopo ogni \textit{commit} si \textit{SVN} sia valido, ed esegue i test pianificati notificandone l'andamento. 
+	\end{itemize}
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.5]{arch.png}
+  \caption{Schema architettura strumenti utilizzati}
+\end{figure}
+
+
+\section{L'azienda e l'innovazione tecnologica}
+%\textcolor{OliveGreen}{\textbf{Definisco come l'azienda si relaziona con l'innovazione tecnologica.
+%Descrivo perchè è sempre più richiesto del software di buona qualità, e il significato delle settimane kaizen per migliorare e ricercare nuove soluzioni riguardanti: processi, scelte produttive o tecnologiche.}}
+
+L'azienda, per essere \textit{leader} nel settore, ha la necessità si essere sempre all'avanguardia rispetto al progresso tecnologico, per questo motivo, per ogni divisione è presente un reparto che si occupa di Ricerca e Sviluppo che, in base alle richieste del mercato, cerca soluzioni sempre più innovative da applicare su prodotti esistenti o crearne di nuovi.
+
+L'area ricerca e sviluppo della divisione \textit{MPFM} si occupa di rivedere e in caso riprogettare le componenti hardware oppure software in caso di malfunzionamenti. Il reparto è in continua evoluzione dal punto di vista tecnologico, la ricerca di soluzioni innovative per abbattere i costi risulta fondamentale, in quando molto spesso, i misuratori di flusso prodotti, vengono installati in zone ostiche e difficili da raggiungere (piattaforme petrolifere, fondali oceanici), dove assicurare la presenza di un tecnico specializzato disponibile in caso di avarie non è sempre possibile.
+
+Per questo motivo, viene impegnato molto tempo alla ricerca di soluzioni che possono agevolare questo tipo di intervento, come avere la possibilità di visualizzare da remoto, oltre ai dati rilevati sulla qualità del petrolio, anche lo stato delle varie componenti che compongono il misuratore suggerendo i possibili malfunzionamenti o rotture che vi possono essere. Per fare ciò e necessaria una ricerca continua ed approfondita delle varie soluzioni hardware e software presenti sul mercato, in modo tale da utilizzare al meglio le risorse presenti sul campo che molto spesso sono limitate.
+
+L'azienda, abituata a produrre per la maggior parte componenti passive, che non richiedono nessun tipo si elaborazione di dati o sistemi informatici, non ha mai avuto un piano ben preciso su come sviluppare del buon \textit{software}. 
+
+La voglia di innovarsi, e di fornire prodotti sempre più appetibili sul mercato ha portato l'azienda ad evolversi sempre di più, grazie anche agli stage in collaborazione con l'università di Padova, cominciando con un processo di ingegnerizzazione per assicurare del \textit{software} di qualità ben progettato e testato, per oltrepassare l'artigianalità con il quale veniva prodotto negli anni passati. Inizialmente questo tipo di richiesta è nata per un processo specifico, ma visto i risultati che sono stati raggiunti, vuole essere applicata a tutti gli altri processi che richiedono del \textit{software} della divisione. 
+
+La ricerca di nuove soluzioni viene promossa sia dagli organi dirigenziali che da tutti i responsabili delle varie divisioni, in quanto viene vista come un modo per accrescere il valore sia dell'azienda e dei prodotti, ma anche dei dipendenti, che si sentono più stimolati e resi partecipi dell'intero ciclo di vita del prodotto.
+
+Avendo un alto numero di dipendenti, ed una divisione dedicata solamente alla ricerca e allo sviluppo di nuove soluzioni indipendenti dai processi produttivi, è possibile sperimentare soluzioni diverse senza avere pressioni dirette da parte del mercato, potendo così provare soluzioni diverse e scegliere quella che bilancia al meglio l'efficacia e l'efficienza. 
