@@ -42,7 +42,7 @@ Condividere uno standard comune di codifica comporta anche molti altri benefici:
 
 Avere un numero fissato di regole e convenzioni, poi, aiuta molto le attività di verifica e validazione infatti, avere un codice scritto sempre nello stesso modo e che quindi sia standardizzato permette di facilitare e velocizzare la stesura e l'automazione delle procedure di test.
 
-L'utilizzo di uno standard di scrittura è stato richiesto, da parte dell'azienda, anche per garantire un'adeguata documentazione del software prodotto. Questa richiesta nasce perchè, all'inizio della realizzazione del progetto \textit{software}, era stata lasciata la massima libertà di lavoro agli sviluppatori, che hanno prodotto una grande quantità di codice senza nessuna documentazione. Così facendo, alla prima occasione in cui è stata richiesta una manutenzione, il reparto di Ricerca e Sviluppo si è trovato davanti a notevoli difficoltà, e si è accorto che la qualità del \textit{software} prodotto era particolarmente bassa; ha quindi deciso di porre delle regole ben precise per non ripetere gli errori passati.
+L'utilizzo di uno standard di scrittura è stato richiesto, da parte dell'azienda, anche per garantire un'adeguata documentazione del software prodotto. Questa richiesta nasce perché, all'inizio della realizzazione del progetto \textit{software}, era stata lasciata la massima libertà di lavoro agli sviluppatori, che hanno prodotto una grande quantità di codice senza nessuna documentazione. Così facendo, alla prima occasione in cui è stata richiesta una manutenzione, il reparto di Ricerca e Sviluppo si è trovato davanti a notevoli difficoltà, e si è accorto che la qualità del \textit{software} prodotto era particolarmente bassa; ha quindi deciso di porre delle regole ben precise per non ripetere gli errori passati.
 
 Per garantire un alto livello qualitativo dei processi e per specificare in dettaglio le scelte di progettazione effettuate, ho prodotto un documento denominato \textit{Code style guide}. Questo documento è pensato per raccogliere tutte le regole di stile previste ed implementate specificandone le motivazioni e i dettagli implementativi. Una prima bozza di documento era già stata scritta nello \textit{stage} precedente. Mi sono occupato principalmente di estendere e modificare alcune delle regole di stile pianificate.
 
@@ -67,7 +67,7 @@ L'utilizzo di questi principi, accompagnato da uno stile di codifica ben definit
 \item[•] \textbf{\textit{Dependency Inversion Principle}}: una classe dovrebbe dipendere dalle astrazioni, non da classi concrete.
 \end{itemize}
 
-\item[] \textbf{DRY} \textit{Don't Repeat Yourself} vuole suggerire al programmatore di evitare di scrivere più volte le stesse linee di codice. É meglio infatti massimizzare il riutilizzo rispetto ad utilizzare una ripetizione del codice.
+\item[] \textbf{DRY} \textit{Don't Repeat Yourself} vuole suggerire al programmatore di evitare di scrivere più volte le stesse linee di codice. È meglio infatti massimizzare il riutilizzo rispetto ad utilizzare una ripetizione del codice.
 \end{itemize}
 
 \subsection{Automazione di controlli}
@@ -125,7 +125,7 @@ Oltre alla realizzazione di strumenti per l'analisi, ho creato uno \textit{scrip
 \section{Analisi statica}
 %\textcolor{OliveGreen}{\textbf{Scelte e motivazioni per l'utilizzo di tools di analisi statica, associate ad alcune best-practice esistenti.}}
 
-Nessun linguaggio di programmazione può garantire la verificabilità di ciò che è stato scritto. Visto l'aumento dei software che incorporano funzionalità strategiche o critiche per la sicurezza, ogni falla nel sistema può causare ingenti danni economici e di immagine. É nata così la necessità di avere un codice ben strutturato per rendere efficaci le attività di verifica, in modo da eliminare qualsiasi situazione critica che possa creare problemi. Lo scopo dell'analisi statica è proprio quello di trovare e notificare eventuali errori sulla struttura di un programma. Solitamente questo tipo di analisi viene utilizzata per verificare la corretta applicazione degli standard di codifica, per analizzare la complessità con la quale viene scritto il \textit{software} oppure per identificare anomalie o difetti.
+Nessun linguaggio di programmazione può garantire la verificabilità di ciò che è stato scritto. Visto l'aumento dei software che incorporano funzionalità strategiche o critiche per la sicurezza, ogni falla nel sistema può causare ingenti danni economici e di immagine. È nata così la necessità di avere un codice ben strutturato per rendere efficaci le attività di verifica, in modo da eliminare qualsiasi situazione critica che possa creare problemi. Lo scopo dell'analisi statica è proprio quello di trovare e notificare eventuali errori sulla struttura di un programma. Solitamente questo tipo di analisi viene utilizzata per verificare la corretta applicazione degli standard di codifica, per analizzare la complessità con la quale viene scritto il \textit{software} oppure per identificare anomalie o difetti.
 
 L'analisi statica aiuta i verificatori a trovare eventuali errori prima che il compilatore li trasformi in bug eseguiti a \textit{run-time}. Alcuni esempi di questi errori, dati molto spesso da inesperienza o distrazione, sono l'utilizzo di una variabile non inizializzata, oppure l'indicizzazione di un array oltre al limite in cui è stato allocato. Con l'esperienza degli sviluppatori l'incidenza di questi \textit{bug} diminuisce, ma resta comunque estremamente frustrante e costosa da sistemare.
 
@@ -169,11 +169,11 @@ Per semplificare e rendere più efficienti gli automatismi degli strumenti di an
 
 \item \textbf{Tutti gli oggetti e le variabili devono essere dichiarati con il minor scope possibile}: questa regola restringe al minimo l'area in cui un oggetto può essere modificato e corrotto, aumentando la sicurezza del sistema e semplificando il lavoro di verificatori e \textit{debugger}.
 
-\item \textbf{Ogni funzione chiamante deve controllare i valori restituitele dalle funzioni chiamate e ogni funzione chiamata deve controllare la validità dei parametri passatele dal chiamante}: questa regola di programmazione aiuta ad aumentare la sicurezza del sistema perchè verifica i valori passati all'interno del codice del programma.
+\item \textbf{Ogni funzione chiamante deve controllare i valori restituitele dalle funzioni chiamate e ogni funzione chiamata deve controllare la validità dei parametri passatele dal chiamante}: questa regola di programmazione aiuta ad aumentare la sicurezza del sistema perché verifica i valori passati all'interno del codice del programma.
 
 \item \textbf{L'uso del pre-processore deve essere limitato all'inclusione di file \textit{header} e alla definizione di semplici macro}: questa regola è posta per evitare che il numero di casi da testare aumenti esponenzialmente all'aumentare della clausole condizionali.
 
-\item \textbf{L'uso dei puntatori deve essere limitato e non è permesso più di un livello di deferenziazione}: questa regola è stata posta perchè i puntatori sono spesso usati in modo scorretto e provocano molti errori di programmazione.
+\item \textbf{L'uso dei puntatori deve essere limitato e non è permesso più di un livello di deferenziazione}: questa regola è stata posta perché i puntatori sono spesso usati in modo scorretto e provocano molti errori di programmazione.
 
 \item \textbf{Tutto il codice prodotto deve essere compilato, fin dal primo giorno, con tutti i warning attivi. Il codice deve compilare senza warning}: questa regola incentiva la scrittura di codice corretto e suggerisce di utilizzare l'integrazione continua
 \end{enumerate} 
@@ -311,7 +311,7 @@ In questo modello vengono descritti i passi e le sequenze che devono essere segu
 
 \subsection{Attività di test}
 
-Una volta definiti i concetti principali che stanno alla base dei test, e le varie tecniche adottate, è necessario integrare quanto è stato sopra descritto in un processo definito e controllato. É opportuno dunque definire un processo che supporti le attività di test e fornisca ai verificatori ed agli sviluppatori informazioni riguardanti la pianificazione dei test, la verifica e la valutazione degli output. In questo modo, grazie ad un processo controllato, è possibile garantire che gli obiettivi dei test sono raggiunti in un modo economicamente conveniente.
+Una volta definiti i concetti principali che stanno alla base dei test, e le varie tecniche adottate, è necessario integrare quanto è stato sopra descritto in un processo definito e controllato. È opportuno dunque definire un processo che supporti le attività di test e fornisca ai verificatori ed agli sviluppatori informazioni riguardanti la pianificazione dei test, la verifica e la valutazione degli output. In questo modo, grazie ad un processo controllato, è possibile garantire che gli obiettivi dei test sono raggiunti in un modo economicamente conveniente.
 
 Per assicurare un'esecuzione disciplinata e sistematica dei test è stato definito un \textit{Test Plan}. Si tratta di un documento ufficiale che definisce le strategie di test che possono essere attuate, l'ambiente di esecuzione dei vari test, e tutti i passi che devono essere attuati per portare a termine nel modo corretto l'attività di verifica tramite tecniche di analisi dinamica. In questo documento vengono anche definite le strutture di due termini chiave nel campo dell'analisi dinamica:
 \begin{itemize}
@@ -440,7 +440,7 @@ Parallelamente a questa analisi, vengono eseguiti dal server anche gli strumenti
 
 L'applicazione degli strumenti di analisi statica viene dunque effettuata automaticamente, a seguito di ogni \textit{commit}, tramite il sistema di integrazione continua \textit{Jenkins}, solamente se la compilazione di tutto il \textit{software} è stata portata a termine senza alcun errore.
 
-L'esecuzione delle regole di conformità di MISRA C è stata eseguita in un ambiente diverso rispetto a quello dell'esecuzione degli altri strumenti. Questo strumento, fornito internamente all'IDE IAR System, ne richiedeva l'esecuzione su un sistema operativo \textit{Windows}, e non \textit{Linux}, come tutti gli altri strumenti utilizzati. É stato necessario dunque utilizzare due server distinti per garantire l'esecuzione completa di quanto pianificato per l'analisi statica, e uno strumento che permettesse la comunicazione diretta e immediata tra i due sistemi operativi. Ho quindi utilizzato la tecnologia SSH per lo scambio dei report di analisi dei file analizzati.
+L'esecuzione delle regole di conformità di MISRA C è stata eseguita in un ambiente diverso rispetto a quello dell'esecuzione degli altri strumenti. Questo strumento, fornito internamente all'IDE IAR System, ne richiedeva l'esecuzione su un sistema operativo \textit{Windows}, e non \textit{Linux}, come tutti gli altri strumenti utilizzati. È stato necessario dunque utilizzare due server distinti per garantire l'esecuzione completa di quanto pianificato per l'analisi statica, e uno strumento che permettesse la comunicazione diretta e immediata tra i due sistemi operativi. Ho quindi utilizzato la tecnologia SSH per lo scambio dei report di analisi dei file analizzati.
 
 \begin{figure}[H]
   \centering
@@ -501,7 +501,7 @@ Sono stati soddisfatti tutti gli obiettivi minimi previsti e quasi tutti gli obi
 Sono riuscito ad applicare alla totalità dei file prodotti dagli sviluppatori, le tecniche di analisi dello stile di codifica e di analisi statica. In particolare, ho integrato i risultati forniti dagli strumenti realizzati sia con i sistemi di versionamento, sia con i sistemi di gestione di processi. L'integrazione con i sistemi di versionamento serviva a dare la possibilità
 al programmatore di visionare immediatamente le eventuali non conformità derivati dall'analisi dello stile di codifica, invece l'integrazione con i sistemi di gestione dei processi, attraverso la realizzazione del componente aggiuntivo per Redmine, dava una rapida visione degli esiti delle analisi effettuate.
 
-Per quanto riguarda gli obiettivi massimi, associati all'analisi dinamica, invece, non sono riuscito a soddisfarli tutti pienamente. Questo perchè, alla luce dei problemi sopra descritti (Vedi 3.6), derivanti dall'incompatibilità tra gli strumenti di analisi trovati e il compilatore IAR utilizzato dall'azienda, non è stato possibile definire una \textit{Test Suite} con copertura almeno del 50\%. Ho comunque realizzato alcuni test su frammenti di programma, potendo così dimostrare l'efficacia e la potenza di questo tipo di analisi.
+Per quanto riguarda gli obiettivi massimi, associati all'analisi dinamica, invece, non sono riuscito a soddisfarli tutti pienamente. Questo perché, alla luce dei problemi sopra descritti (Vedi 3.6), derivanti dall'incompatibilità tra gli strumenti di analisi trovati e il compilatore IAR utilizzato dall'azienda, non è stato possibile definire una \textit{Test Suite} con copertura almeno del 50\%. Ho comunque realizzato alcuni test su frammenti di programma, potendo così dimostrare l'efficacia e la potenza di questo tipo di analisi.
 
 
 %\section{Documenti prodotti}

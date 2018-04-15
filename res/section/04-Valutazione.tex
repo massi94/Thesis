@@ -1,13 +1,75 @@
 \chapter{Valutazione retrospettiva}
 
 \section{Bilancio sugli obiettivi}
-\textcolor{OliveGreen}{\textbf{Specifico quali obiettivi sono stati raggiunti rispetto alla pianificazione iniziale, analizzando anche la suddivisione del tempo di lavoro.}}
+%\textcolor{OliveGreen}{\textbf{Specifico quali obiettivi sono stati raggiunti rispetto alla pianificazione iniziale, analizzando anche la suddivisione del tempo di lavoro.}}
+Lo stage si prefiggeva di raggiungere, nelle 300 ore previste, una serie di obiettivi che erano stati distinti in obiettivi minimi e obiettivi massimi.
 
-\section{Sviluppi futuri}
-\textcolor{OliveGreen}{\textbf{Specifico quali possono essere i possibili punti di espansione del progetto.}}
+Gli obiettivi minimi si concentravano sull'analisi teorica e sull'implementazione delle metodologie di verifica e validazione del codice. Successivamente, gli obiettivi richiedevano anche una dimostrazione dell'effettiva efficacia degli strumenti realizzati attraverso esempi pratici e applicazione di poche regole di analisi.
+
+Gli obiettivi massimi, invece, prevedevano la realizzazione di una solida struttura, integrata con i sistemi aziendali, in grado di analizzare la totalità del codice prodotto dall'azienda, fornendo agli sviluppatori e ai componenti del Reparto di Ricerca e Sviluppo, degli indicatori qualitativi su ciò che viene prodotto.
+
+Sono riuscito a raggiungere pienamente tutti gli obiettivi minimi, e grazie ad una buona progettazione iniziale, sono riuscito a soddisfare anche buona parte di quelli massimi.
+
+Il mancato soddisfacimento di tutti gli obiettivi massimi, è legato principalmente a problemi imprevisti, e imprevedibili a priori, associati alla compilazione del codice prodotto dagli sviluppatori aziendali. Non ho potuto, infatti, integrare a pieno gli strumenti realizzati con il software dei sistemi \textit{Subsea}. In particolare, l'integrazione è stata bloccata da un problema di compatibilità tra il compilatore \textit{IAR} utilizzato dall'azienda, e il compilatore \textit{gcc} utilizzato per effettuare l'analisi del codice, come già illustrato precedentemente. In un primo momento ho deciso di cercare delle soluzioni che potessero risolvere questo problema che risultava, a tutti gli effetti, limitante, ma, dopo aver cercato di applicare senza successo le possibili soluzioni attraverso l'utilizzo di strumenti che effettuano il \glossaryItem{porting} del software tra i due compilatori, ho deciso, in accordo con il \textit{tutor} aziendale, di accantonare gli obiettivi direttamente ostacolati da questa difficoltà, per poterne portare a termine altri di più fattibili. Abbiamo evitato così di perdere ulteriore tempo in un'attività che avrebbe richiesto una mole importante di lavoro e di risorse.
+
+Prima della fine dello \textit{stage}, poi, avendo ancora tempo a disposizione, mi sono confrontato con il \textit{tutor} aziendale sulla possibilità di porre un obiettivo aggiuntivo, non previsto inizialmente. Durante le settimane precedenti, infatti, era emersa una difficoltà nella lettura dei report delle analisi effettuate, che avrebbe potuto appesantire in maniera notevole il lavoro degli sviluppatori. Valutato il carico di lavoro che risolvere questa difficoltà avrebbe previsto, e alla luce del tempo rimasto, abbiamo quindi deciso di procedere con questo obiettivo aggiuntivo. Concretamente si trattava di realizzare un componente aggiuntivo, integrato con il sistema di gestione di progetto Redmine, in grado di raggruppare in un unico punto tutti i report generati dagli strumenti di analisi.  L'implementazione di questo componente ha permesso uniformare tutti i sistemi di analisi precedentemente realizzati, rendendo più stabile il loro utilizzo.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{100}\hfil
+\includegraphics[scale=0.3]{80}
+\caption{Soddisfacimento requisiti minimi e massimi}
+\end{figure}
+
+Durante la presentazione finale, su richiesta del \textit{tutor} aziendale, ho anche proposto alcuni obiettivi aggiuntivi da applicare nei prossimi progetti. Questi obiettivi servono a garantire un buon grado di miglioramento rispetto alle tecniche di verifica e validazione del software.
+
+Una delle aree che potranno sicuramente essere migliorate, dunque, riguarda l'applicazione degli strumenti e dei metodi di analisi dinamica. In questo progetto, in questi termini, ho posto infatti solamente delle piccole basi di partenza. In futuro, avendo più tempo a disposizione, sarà possibile analizzare a fondo il problema riscontrato per l'incompatibilità tra i due compilatori, trovando così una soluzione funzionale che permetta l'esecuzione delle tecniche di analisi dinamica. 
+
+Una volta risolto questo, sarà possibile pianificare e realizzare dei test che garantiscano una buona copertura del codice. Parallelamente, però, vi deve essere anche l'impegno da parte dell'azienda di produrre una documentazione di qualità sul software da loro prodotto. In questo modo sarà possibile facilitare le procedure di pianificazione ed esecuzione dei test affidate agli sviluppatori.
+
 
 \section{Bilancio formativo}
-\textcolor{OliveGreen}{\textbf{Descrivo ciò che ho imparato di nuovo durante il percorso di stage, e quali sono state le responsabilità assegnate. Volontà dell'azienda di applicare un incremento continuo riguardo la qualità dell'intero ciclo produttivo facendomi partecipare anche a corsi di formazione interni sulla qualità.}}
+%\textcolor{OliveGreen}{\textbf{Descrivo ciò che ho imparato di nuovo durante il percorso di stage, e quali sono state le responsabilità assegnate. Volontà dell'azienda di applicare un incremento continuo riguardo la qualità dell'intero ciclo produttivo facendomi partecipare anche a corsi di formazione interni sulla qualità.}}
+
+In questo \textit{stage} ho consolidato le basi poste dai progetti precedenti, e ne ho aggiunte di nuove, lasciando però ancora molto margine di miglioramento. L'applicazione degli strumenti di analisi in un progetto già avviato si è dimostrata abbastanza difficoltosa in quanto mi sono trovato davanti ad un sistema di sviluppo software non ancora ben strutturato. Imporre ed applicare delle regole nuove in un ambiente di lavoro già avviato, poi, ha richiesto molte risorse, in quanto ho dovuto ben bilanciare le regole da applicare, suggerite dagli standard, per garantire un prodotto di qualità, con le necessità dell'azienda di non interrompere il flusso di lavoro costringendo gli sviluppatori a sole attività di revisione e modifica del codice. Le regole e le attività di analisi sono state, dunque, pianificate e scelte per garantire una buona qualità, e nel frattempo permettere la continuazione del lavoro che era già avviato.
+
+\bigskip
+
+Lo \textit{stage} si è rivelato molto interessante e mi ha permesso di mettermi in gioco rispetto a diverse tematiche.
+
+Ho innanzitutto imparato a confrontarmi e dialogare con diverse figure all'interno della Divisione di lavoro, e questo ha rafforzato le mie capacità di relazione con altre figure professionali. Il confronto continuo con persone di altri settori e di esperienza ben più longeva della mia, mi ha anche fatto vedere l'esistenza di ambiti che non pensavo potessero riguardare l'informatica per come l'avevo conosciuta nelle aule universitarie. Penso per esempio ai limiti che la parte \textit{hardware} e sensoristica danno all'effettivo sviluppo del codice.
+
+Avendo avuto la massima libertà di pianificazione del lavoro e delle risorse disponibili poi, ho imparato a gestire nel migliore dei modi i tempi necessari per portare a termine le attività richieste. In questo modo ho appreso delle conoscenze anche nell'ambito dell'organizzazione del lavoro che penso possano tornarmi molto utili nel prossimo futuro.
+
+Ho anche potuto approfondire in dettaglio e trovare delle soluzioni reali alle tematiche associate all'analisi del software, che solitamente vengono solo accennate durante le lezioni accademiche. Essermi trovato in un'azienda che crede fermamente in queste tematiche mi ha permesso di crescere molto e di rivalutare quelle attività che consideravo inizialmente una "decorazione" del prodotto finale realizzato. Ho cominciato, con questo stage a considerarle infatti come attività fondamentali che devono essere realmente applicate in maniera efficace per garantire un vero software di qualità.
+
+\bigskip
+
+La voglia di miglioramento continuo che l'azienda vive come principio fondamentale si è trasposta anche in questo \textit{stage}, sono stato considerato infatti a tutti gli effetti come un loro dipendente, ho partecipato ai corsi di formazione interni nei quali ho appreso nuove conoscenze specifiche nell'ambito della qualità dei loro prodotti e dell'intero ciclo produttivo. In questi corsi ho conosciuto nuovi standard e ne ho approfonditi altri già studiati durante i corsi universitari, incrementando così il mio bagaglio conoscitivo.
+
+\bigskip
+
+Dal punto di vista tecnologico, invece, ho appreso delle nuove conoscenze approfondite riguardanti i termini di integrazione continua e gestione di processo. Ho potuto imparare in dettaglio il funzionamento dei sistemi \textit{Jenkins} e \textit{Redmine} che all'inizio conoscevo solo marginalmente.
 
 \section{Analisi gap formativo}
-\textcolor{OliveGreen}{\textbf{Descrivo le difficoltà incontrate, soffermandomi su come sia stato possibile adattarsi alle richieste dell'azienda.}}
+%\textcolor{OliveGreen}{\textbf{Descrivo le difficoltà incontrate, soffermandomi su come sia stato possibile adattarsi alle richieste dell'azienda.}}
+
+Lo \textit{stage} mi ha permesso di approfondire e applicare molto di ciò che viene studiato durante gli anni accademici.
+
+
+È stato interessante intervenire in un'azienda non specializzata nello sviluppo \textit{software}, perché ho potuto così conoscere un modo di lavorare nuovo che è diverso da quello affrontato durante i progetti universitari. L'applicazione dei concetti informatici nell'ambito industriale mi ha permesso di avere una visione ben più dettagliata e varia delle possibili proposte di lavoro che potrò valutare una volta concluso il corso di studi. 
+
+Durante le 300 ore, ho potuto sfruttare al massimo le conoscenze apprese durante gli anni accademici, esprimendo fin da subito e in autonomia giudizi sulle scelte tecnologiche e concettuali pregresse, e prendere delle decisioni ragionate per uno sviluppo consapevole del progetto. Oltre a questo, ho potuto integrare autonomamente ulteriori concetti riguardanti l'ingegneria del software, quali la scelta delle migliori tecnologie di analisi, o l'utilizzo delle corrette metriche di misurazione della qualità. Questa integrazione personale è stata facilitata dalle tecniche di analisi e studio che sono state apprese durante la mia carriera universitaria.
+
+
+Ogni corso di indirizzo che ho sostenuto all'università mi ha fornito delle conoscenze che mi hanno permesso di realizzare e portare a termine tutte le attività richieste da questo \textit{stage}. 
+
+Ritengo, però, che potrebbe essere utile aggiungere all'interno del Corso di Laurea in Informatica una tipologia di insegnamento che associ l'utilizzo degli strumenti informatici ai processi aziendali delle industrie che non sono direttamente legati ai prodotti software. Personalmente credo che una scelta di questo tipo potrebbe aiutare lo studente che si troverà nel vero mondo del lavoro e in ambiti lontani dal solo sviluppo di codice e darebbe un valore aggiunto al Corso di Laurea alla luce dell'elevata industrializzazione che caratterizza il nord Italia.
+
+
+%#####################################
+\bigskip
+Concludendo, mi ritengo molto soddisfatto di quanto ho fatto e di come si è svolto questo \textit{stage} in quanto mi ha permesso di apprendere dei concetti molto specifici dell'ingegneria del software. Non ho avuto alcun problema nell'imparare metodologie di analisi nuove ed ho effettivamente applicato in un ambiente esecutivo dei concetti che tipicamente vengono ignorati e considerati di secondo piano, e ciò mi ha dato una positività e una speranza nuove per il mio futuro lavorativo.
+
+Personalmente, poi, credo che anche l'azienda sia soddisfatta dell'andamento di questo stage visto l'entusiasmo con cui è stata accolta la presentazione finale, e le richieste e sfide nuove che mi sono state proposte una volta terminati gli studi.
+
